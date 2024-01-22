@@ -1,0 +1,8 @@
+/.hta                [33m (Status: 403)[0m [Size: 278]
+/.htaccess           [33m (Status: 403)[0m [Size: 278]
+/.htpasswd           [33m (Status: 403)[0m [Size: 278]
+/css                 [36m (Status: 301)[0m [Size: 312][34m [--> http://10.129.130.69/css/][0m
+/fonts               [36m (Status: 301)[0m [Size: 314][34m [--> http://10.129.130.69/fonts/][0m
+/images              [36m (Status: 301)[0m [Size: 315][34m [--> http://10.129.130.69/images/][0m
+/index.html          [32m (Status: 200)[0m [Size: 15189]
+/server-status       [33m (Status: 403)[0m [Size: 278]

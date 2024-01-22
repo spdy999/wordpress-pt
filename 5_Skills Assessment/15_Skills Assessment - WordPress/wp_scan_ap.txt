@@ -1,0 +1,115 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.25
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: http://blog.inlanefreight.local/ [10.129.247.125]
+[32m[+][0m Started: Fri Dec 29 11:59:07 2023
+
+
+Scan Aborted: Canceled by User
+Trace: /usr/share/rubygems-integration/all/gems/ethon-0.16.0/lib/ethon/multi/operations.rb:161:in `sleep'
+/usr/share/rubygems-integration/all/gems/ethon-0.16.0/lib/ethon/multi/operations.rb:161:in `set_fds'
+/usr/share/rubygems-integration/all/gems/ethon-0.16.0/lib/ethon/multi/operations.rb:54:in `perform'
+/usr/share/rubygems-integration/all/gems/typhoeus-1.4.0/lib/typhoeus/hydra/runnable.rb:15:in `run'
+/usr/share/rubygems-integration/all/gems/typhoeus-1.4.0/lib/typhoeus/hydra/memoizable.rb:51:in `run'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.13.9/lib/cms_scanner/typhoeus/hydra.rb:9:in `abort'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.13.9/lib/cms_scanner/controllers.rb:56:in `ensure in run'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.13.9/lib/cms_scanner/controllers.rb:64:in `run'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.13.9/lib/cms_scanner/scan.rb:24:in `run'
+/usr/share/rubygems-integration/all/gems/wpscan-3.8.25/bin/wpscan:17:in `block in <top (required)>'
+/usr/share/rubygems-integration/all/gems/cms_scanner-0.13.9/lib/cms_scanner/scan.rb:15:in `initialize'
+/usr/share/rubygems-integration/all/gems/wpscan-3.8.25/bin/wpscan:6:in `new'
+/usr/share/rubygems-integration/all/gems/wpscan-3.8.25/bin/wpscan:6:in `<top (required)>'
+/usr/bin/wpscan:25:in `load'
+/usr/bin/wpscan:25:in `<main>'
+on)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 5.1.6 identified (Insecure, released on 2020-06-10).
+ | Found By: Rss Generator (Passive Detection)
+ |  - http://blog.inlanefreight.local/?feed=rss2, <generator>https://wordpress.org/?v=5.1.6</generator>
+ |  - http://blog.inlanefreight.local/?feed=comments-rss2, <generator>https://wordpress.org/?v=5.1.6</generator>
+
+[32m[+][0m WordPress theme in use: twentynineteen
+ | Location: http://blog.inlanefreight.local/wp-content/themes/twentynineteen/
+ | Last Updated: 2023-11-07T00:00:00.000Z
+ | Readme: http://blog.inlanefreight.local/wp-content/themes/twentynineteen/readme.txt
+ | [33m[!][0m The version is out of date, the latest version is 2.7
+ | Style URL: http://blog.inlanefreight.local/wp-content/themes/twentynineteen/style.css?ver=1.3
+ | Style Name: Twenty Nineteen
+ | Style URI: https://github.com/WordPress/twentynineteen
+ | Description: Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes.
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ | License: GNU General Public License v2 or later
+ | License URI: LICENSE
+ | Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+ | Text Domain: twentynineteen
+ |
+ | Found By: Css Style In Homepage (Passive Detection)
+ |
+ | Version: 1.3 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://blog.inlanefreight.local/wp-content/themes/twentynineteen/style.css?ver=1.3, Match: 'Version: 1.3'
+
+
+[34m[i][0m Plugin(s) Identified:
+
+[32m[+][0m email-subscribers
+ | Location: http://blog.inlanefreight.local/wp-content/plugins/email-subscribers/
+ | Last Updated: 2023-12-19T09:41:00.000Z
+ | [33m[!][0m The version is out of date, the latest version is 5.7.4
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | Version: 4.2.2 (100% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - http://blog.inlanefreight.local/wp-content/plugins/email-subscribers/readme.txt
+ | Confirmed By: Readme - ChangeLog Section (Aggressive Detection)
+ |  - http://blog.inlanefreight.local/wp-content/plugins/email-subscribers/readme.txt
+
+[32m[+][0m site-editor
+ | Location: http://blog.inlanefreight.local/wp-content/plugins/site-editor/
+ | Latest Version: 1.1.1 (up to date)
+ | Last Updated: 2017-05-02T23:34:00.000Z
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | Version: 1.1.1 (80% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - http://blog.inlanefreight.local/wp-content/plugins/site-editor/readme.txt
+
+[32m[+][0m the-events-calendar
+ | Location: http://blog.inlanefreight.local/wp-content/plugins/the-events-calendar/
+ | Last Updated: 2023-12-14T15:10:00.000Z
+ | [33m[!][0m The version is out of date, the latest version is 6.2.9
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | Version: 5.1.2.1 (80% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - http://blog.inlanefreight.local/wp-content/plugins/the-events-calendar/readme.txt
+
+[33m[!][0m No WPScan API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 25 daily requests by registering at https://wpscan.com/register
+
+[32m[+][0m Finished: Fri Dec 29 11:59:22 2023
+[32m[+][0m Requests Done: 19
+[32m[+][0m Cached Requests: 24
+[32m[+][0m Data Sent: 4.72 KB
+[32m[+][0m Data Received: 827.885 KB
+[32m[+][0m Memory used: 250.453 MB
+[32m[+][0m Elapsed time: 00:00:15

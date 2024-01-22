@@ -1,0 +1,112 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.25
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: http://83.136.251.235:49282/ [83.136.251.235]
+[32m[+][0m Started: Sun Dec 24 11:51:04 2023
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entry: Server: nginx
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: http://83.136.251.235:49282/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner/
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
+
+[32m[+][0m WordPress readme found: http://83.136.251.235:49282/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m Upload directory has listing enabled: http://83.136.251.235:49282/wp-content/uploads/
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: http://83.136.251.235:49282/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 5.1.6 identified (Insecure, released on 2020-06-10).
+ | Found By: Rss Generator (Passive Detection)
+ |  - http://83.136.251.235:49282/feed/, <generator>https://wordpress.org/?v=5.1.6</generator>
+ |  - http://83.136.251.235:49282/comments/feed/, <generator>https://wordpress.org/?v=5.1.6</generator>
+
+[32m[+][0m WordPress theme in use: ben_theme
+ | Location: http://83.136.251.235:49282/wp-content/themes/ben_theme/
+ | Readme: http://83.136.251.235:49282/wp-content/themes/ben_theme/readme.txt
+ | Style URL: http://83.136.251.235:49282/wp-content/themes/ben_theme/style.css?ver=5.1.6
+ | Style Name: Transportex
+ | Style URI: https://themeansar.com/free-themes/transportex/
+ | Description: Transportex is a transport, logistics & home movers WordPress theme with focus on create online transport logistics, truck, trucking, shipment, fleet, flat mover, moving company, shipping, warehouse, delivery, freight services, corporate, showcase,Air Freight, Sea Freight, Road Freight, Logistics Works, tracking, carrier, transport logistics, delivery, Routes, Warehousing, overland network, responsive creative portfolio, package, storage, multipurpose business, Transportex offers grid pattern, three different tile / grid blog layouts, page transitions and distinctive typography. It also includes easy to use and fast page builder siteorigin. Cargo adapts to every device, from smartphones and tablets to desktops. It comes with free updates and free support by our highly acclaimed team. demo at https://themeansar.com/themes/transportex-pro/
+ | Author: Themeansar
+ | Author URI: https://themeansar.com/
+ | License: GNU General Public License v3 or later
+ | License URI: http://www.gnu.org/licenses/gpl.html
+ | Tags: two-columns, three-columns, left-sidebar, right-sidebar, translation-ready, custom-background, custom-logo, featured-images, footer-widgets, full-width-template, blog
+ | Text Domain: transportex
+ |
+ | Found By: Css Style In Homepage (Passive Detection)
+ | Confirmed By: Css Style In 404 Page (Passive Detection)
+ |
+ | Version: 1.6.7 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://83.136.251.235:49282/wp-content/themes/ben_theme/style.css?ver=5.1.6, Match: 'Version: 1.6.7'
+
+
+[34m[i][0m No plugins Found.
+
+
+[34m[i][0m No themes Found.
+
+
+[34m[i][0m User(s) Identified:
+
+[32m[+][0m admin
+ | Found By: Author Posts - Author Pattern (Passive Detection)
+ | Confirmed By:
+ |  Rss Generator (Passive Detection)
+ |  Wp Json Api (Aggressive Detection)
+ |   - http://83.136.251.235:49282/wp-json/wp/v2/users/?per_page=100&page=1
+ |  Rss Generator (Aggressive Detection)
+ |  Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+ |  Login Error Messages (Aggressive Detection)
+
+[32m[+][0m david
+ | Found By: Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+ | Confirmed By: Login Error Messages (Aggressive Detection)
+
+[32m[+][0m roger
+ | Found By: Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+ | Confirmed By: Login Error Messages (Aggressive Detection)
+
+[33m[!][0m No WPScan API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 25 daily requests by registering at https://wpscan.com/register
+
+[32m[+][0m Finished: Sun Dec 24 12:00:08 2023
+[32m[+][0m Requests Done: 7426
+[32m[+][0m Cached Requests: 9
+[32m[+][0m Data Sent: 2.064 MB
+[32m[+][0m Data Received: 2.872 MB
+[32m[+][0m Memory used: 281.574 MB
+[32m[+][0m Elapsed time: 00:09:03
