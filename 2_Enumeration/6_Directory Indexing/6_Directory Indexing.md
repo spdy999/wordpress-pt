@@ -12,7 +12,7 @@ Note:: Should have find the way to find wanted file(s) in every directory found 
 Target: 83.136.251.235:49282 
 
 ## Keep in mind the key WordPress directories discussed in the WordPress Structure section. Manually enumerate the target for any directories whose contents can be listed. Browse these directories and locate a flag with the file name <mark style="background: #FF5582A6;">flag.txt</mark> and submit its contents as the answer.
-- ANS
+- `HTB{3num3r4t10n_15_k3y}`
 	- [[WordPress]] [[Enumeration]]
 		- Version
 			```txt hl:2,3
